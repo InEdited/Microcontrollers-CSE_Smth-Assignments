@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\Data\Projects\IAR Workbench\settings\Assignment.Debug.general.xcl" --backend -f "C:\Data\Projects\IAR Workbench\settings\Assignment.Debug.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\Users\Youssef Assem\Desktop\micro5ara\Microcontrollers-CSE_Smth-Assignments\Assignment 1\settings\Assignment.Debug.general.xcl" --backend -f "C:\Users\Youssef Assem\Desktop\micro5ara\Microcontrollers-CSE_Smth-Assignments\Assignment 1\settings\Assignment.Debug.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\Data\Projects\IAR Workbench\settings\Assignment.Debug.general.xcl" "--debug_file=%~1" --backend -f "C:\Data\Projects\IAR Workbench\settings\Assignment.Debug.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\Users\Youssef Assem\Desktop\micro5ara\Microcontrollers-CSE_Smth-Assignments\Assignment 1\settings\Assignment.Debug.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\Youssef Assem\Desktop\micro5ara\Microcontrollers-CSE_Smth-Assignments\Assignment 1\settings\Assignment.Debug.driver.xcl" 
 
 @echo off 
 :end

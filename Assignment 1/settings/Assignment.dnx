@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <settings>
     <DebugChecksum>
-        <Checksum>986315383</Checksum>
+        <Checksum>518691588</Checksum>
     </DebugChecksum>
     <Stack>
         <FillEnabled>0</FillEnabled>
@@ -91,7 +91,9 @@
         <Stop>1</Stop>
     </MemConfig>
     <Aliases>
-        <Count>0</Count>
+        <A0>_ "C:\Data\Projects\IAR Workbench\7seg.c" "C:\Users\Youssef Assem\Desktop\micro5ara\Microcontrollers-CSE_Smth-Assignments\Assignment 1\7seg.c"</A0>
+        <A1>_ "C:\Data\Projects\IAR Workbench\main.c" ""</A1>
+        <Count>2</Count>
         <SuppressDialog>0</SuppressDialog>
     </Aliases>
     <Simulator>

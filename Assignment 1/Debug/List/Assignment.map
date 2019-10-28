@@ -1,20 +1,29 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.40.2.214/W32 for ARM                  27/Oct/2019  04:32:14
+# IAR ELF Linker V8.40.2.214/W32 for ARM                  29/Oct/2019  00:49:01
 # Copyright 2007-2019 IAR Systems AB.
 #
-#    Output file  =  C:\Data\Projects\IAR Workbench\Debug\Exe\Assignment.out
-#    Map file     =  C:\Data\Projects\IAR Workbench\Debug\List\Assignment.map
+#    Output file  =
+#        C:\Users\Youssef
+#        Assem\Desktop\micro5ara\Microcontrollers-CSE_Smth-Assignments\Assignment
+#        1\Debug\Exe\Assignment.out
+#    Map file     =
+#        C:\Users\Youssef
+#        Assem\Desktop\micro5ara\Microcontrollers-CSE_Smth-Assignments\Assignment
+#        1\Debug\List\Assignment.map
 #    Command line =
-#        -f C:\Users\robea\AppData\Local\Temp\EWED48.tmp ("C:\Data\Projects\IAR
-#        Workbench\Debug\Obj\7seg.o" "C:\Data\Projects\IAR
-#        Workbench\Debug\Obj\main.o" --no_out_extension -o
-#        "C:\Data\Projects\IAR Workbench\Debug\Exe\Assignment.out" --redirect
-#        _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb --map
-#        "C:\Data\Projects\IAR Workbench\Debug\List\Assignment.map" --config
-#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
-#        8.3\arm\CONFIG\generic_cortex.icf" --semihosting --entry
-#        __iar_program_start --vfe --text_out locale)
+#        -f C:\Users\YOUSSE~1\AppData\Local\Temp\EWF86C.tmp ("C:\Users\Youssef
+#        Assem\Desktop\micro5ara\Microcontrollers-CSE_Smth-Assignments\Assignment
+#        1\Debug\Obj\7seg.o" "C:\Users\Youssef
+#        Assem\Desktop\micro5ara\Microcontrollers-CSE_Smth-Assignments\Assignment
+#        1\Debug\Obj\main.o" --no_out_extension -o "C:\Users\Youssef
+#        Assem\Desktop\micro5ara\Microcontrollers-CSE_Smth-Assignments\Assignment
+#        1\Debug\Exe\Assignment.out" --redirect _Printf=_PrintfFullNoMb
+#        --redirect _Scanf=_ScanfFullNoMb --map "C:\Users\Youssef
+#        Assem\Desktop\micro5ara\Microcontrollers-CSE_Smth-Assignments\Assignment
+#        1\Debug\List\Assignment.map" --config "C:\Program Files (x86)\IAR
+#        Systems\Embedded Workbench 8.3\arm\CONFIG\generic_cortex.icf"
+#        --semihosting --entry __iar_program_start --vfe --text_out locale)
 #
 ###############################################################################
 
@@ -31,10 +40,9 @@ __dlib_version  = 6
 *** HEAP SELECTION
 ***
 
-The basic heap was selected because no calls to memory allocation
-functions were found in the application outside of system library
-functions, and there are calls to deallocation functions in the
-application.
+The basic heap was selected because some modules are built with
+size limitations (and not runtime checking), and --advanced_heap
+was not specified.
 
 
 *******************************************************************************
@@ -97,7 +105,7 @@ command line/config:
     -------------------------------------------
     Total:
 
-C:\Data\Projects\IAR Workbench\Debug\Obj: [1]
+C:\Users\Youssef Assem\Desktop\micro5ara\Microcontrollers-CSE_Smth-Assignments\Assignment 1\Debug\Obj: [1]
     7seg.o                222       64
     main.o                184
     -------------------------------------------
@@ -159,7 +167,7 @@ reset_seg7                  0x115   0xa  Code  Gb  7seg.o [1]
 set_val_seg7                 0xf5  0x20  Code  Gb  7seg.o [1]
 
 
-[1] = C:\Data\Projects\IAR Workbench\Debug\Obj
+[1] = C:\Users\Youssef Assem\Desktop\micro5ara\Microcontrollers-CSE_Smth-Assignments\Assignment 1\Debug\Obj
 [2] = dl7M_tln.a
 [3] = rt7M_tl.a
 [4] = shb_l.a

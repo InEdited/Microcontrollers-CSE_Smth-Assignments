@@ -1,14 +1,14 @@
-"C:\Data\Projects\IAR Workbench\main.c"
+"C:\Users\Youssef Assem\Desktop\micro5ara\Microcontrollers-CSE_Smth-Assignments\Assignment 1\main.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -MD
 -MF
-C:\Data\Projects\IAR Workbench\Debug\Obj\main.pbi.dep
+C:\Users\Youssef Assem\Desktop\micro5ara\Microcontrollers-CSE_Smth-Assignments\Assignment 1\Debug\Obj\main.pbi.dep
 -o
 main.pbi
 -I
-C:\Data\Projects\IAR Workbench
+C:\Users\Youssef Assem\Desktop\micro5ara\Microcontrollers-CSE_Smth-Assignments\Assignment 1
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc
 -I
