@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\Data\Projects\IAR Workbench\settings\Assignment.Debug.general.xcl" --backend -f "C:\Data\Projects\IAR Workbench\settings\Assignment.Debug.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\Users\Youssef Assem\Desktop\MicroController\Microcontrollers-CSE_Smth-Assignments-master\Assignment 1\settings\Assignment.Debug.general.xcl" --backend -f "C:\Users\Youssef Assem\Desktop\MicroController\Microcontrollers-CSE_Smth-Assignments-master\Assignment 1\settings\Assignment.Debug.driver.xcl" 
 }
 else
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\Data\Projects\IAR Workbench\settings\Assignment.Debug.general.xcl" --debug_file=$debugfile --backend -f "C:\Data\Projects\IAR Workbench\settings\Assignment.Debug.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\Users\Youssef Assem\Desktop\MicroController\Microcontrollers-CSE_Smth-Assignments-master\Assignment 1\settings\Assignment.Debug.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\Youssef Assem\Desktop\MicroController\Microcontrollers-CSE_Smth-Assignments-master\Assignment 1\settings\Assignment.Debug.driver.xcl" 
 }

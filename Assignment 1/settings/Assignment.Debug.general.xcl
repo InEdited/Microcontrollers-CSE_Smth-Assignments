@@ -1,10 +1,14 @@
 "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\bin\armproc.dll" 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\bin\armsim2.dll" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\bin\armlmiftdi.dll" 
 
-"C:\Data\Projects\IAR Workbench\Debug\Exe\Assignment.out" 
+"C:\Users\Youssef Assem\Desktop\MicroController\Microcontrollers-CSE_Smth-Assignments-master\Assignment 1\Debug\Exe\Assignment.out" 
 
 --plugin="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\bin\armbat.dll" 
+
+--device_macro="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\config\debugger\TexasInstruments\TM4C123.dmac" 
+
+--flash_loader="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\config\flashloader\TexasInstruments\FlashTC4_H6_o.board" 
 
 
 

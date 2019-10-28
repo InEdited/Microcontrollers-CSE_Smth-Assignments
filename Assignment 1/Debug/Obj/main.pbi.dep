@@ -1,4 +1,5 @@
-main.pbi: C:\Data\Projects\IAR\ Workbench\main.c \
+main.pbi: \
+  C:\Users\Youssef\ Assem\Desktop\MicroController\Microcontrollers-CSE_Smth-Assignments-master\Assignment\ 1\main.c \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\stdio.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\ycheck.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\yvals.h \
@@ -6,5 +7,5 @@ main.pbi: C:\Data\Projects\IAR\ Workbench\main.c \
   C:\\Program\ Files\ (x86)\\IAR\ Systems\\Embedded\ Workbench\ 8.3\\arm\\inc\\c\\DLib_Config_Normal.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\DLib_Product.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\ysizet.h \
-  C:\Data\Projects\IAR\ Workbench/tm4c123gh6pm.h \
-  C:\Data\Projects\IAR\ Workbench/7seg.h
+  C:\Users\Youssef\ Assem\Desktop\MicroController\Microcontrollers-CSE_Smth-Assignments-master\Assignment\ 1/tm4c123gh6pm.h \
+  C:\Users\Youssef\ Assem\Desktop\MicroController\Microcontrollers-CSE_Smth-Assignments-master\Assignment\ 1/7seg.h
