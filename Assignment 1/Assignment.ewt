@@ -2381,6 +2381,12 @@
         <name>$PROJ_DIR$\main.c</name>
     </file>
     <file>
+        <name>$PROJ_DIR$\pad.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\pad.h</name>
+    </file>
+    <file>
         <name>$PROJ_DIR$\tm4c123gh6pm.h</name>
     </file>
 </project>

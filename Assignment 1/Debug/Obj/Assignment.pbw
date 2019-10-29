@@ -95837,6 +95837,300 @@
     "scope": null
   },
   {
+    "ID": "c:main.c@94@macro@sw1",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "sw1",
+    "location": {
+      "column": "9",
+      "line": "6",
+      "path": "C:\\Users\\Youssef Assem\\Desktop\\micro5ara\\Microcontrollers-CSE_Smth-Assignments\\Assignment 1\\main.c"
+    },
+    "name": "sw1",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@116@macro@sw2",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "sw2",
+    "location": {
+      "column": "9",
+      "line": "7",
+      "path": "C:\\Users\\Youssef Assem\\Desktop\\micro5ara\\Microcontrollers-CSE_Smth-Assignments\\Assignment 1\\main.c"
+    },
+    "name": "sw2",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@delay",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void delay(int)",
+    "location": {
+      "column": "6",
+      "line": "9",
+      "path": "C:\\Users\\Youssef Assem\\Desktop\\micro5ara\\Microcontrollers-CSE_Smth-Assignments\\Assignment 1\\main.c"
+    },
+    "name": "delay",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@162@F@delay@c",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "c",
+    "location": {
+      "column": "7",
+      "line": "11",
+      "path": "C:\\Users\\Youssef Assem\\Desktop\\micro5ara\\Microcontrollers-CSE_Smth-Assignments\\Assignment 1\\main.c"
+    },
+    "name": "c",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@main",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int main(void)",
+    "location": {
+      "column": "5",
+      "line": "18",
+      "path": "C:\\Users\\Youssef Assem\\Desktop\\micro5ara\\Microcontrollers-CSE_Smth-Assignments\\Assignment 1\\main.c"
+    },
+    "name": "main",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@1271@F@main@disp",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "disp",
+    "location": {
+      "column": "15",
+      "line": "45",
+      "path": "C:\\Users\\Youssef Assem\\Desktop\\micro5ara\\Microcontrollers-CSE_Smth-Assignments\\Assignment 1\\main.c"
+    },
+    "name": "disp",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@1331@F@main@sw1_on",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "sw1_on",
+    "location": {
+      "column": "7",
+      "line": "47",
+      "path": "C:\\Users\\Youssef Assem\\Desktop\\micro5ara\\Microcontrollers-CSE_Smth-Assignments\\Assignment 1\\main.c"
+    },
+    "name": "sw1_on",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@1331@F@main@sw2_on",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "sw2_on",
+    "location": {
+      "column": "15",
+      "line": "47",
+      "path": "C:\\Users\\Youssef Assem\\Desktop\\micro5ara\\Microcontrollers-CSE_Smth-Assignments\\Assignment 1\\main.c"
+    },
+    "name": "sw2_on",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@1377@F@main@k",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "k",
+    "location": {
+      "column": "9",
+      "line": "51",
+      "path": "C:\\Users\\Youssef Assem\\Desktop\\micro5ara\\Microcontrollers-CSE_Smth-Assignments\\Assignment 1\\main.c"
+    },
+    "name": "k",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:pad.h@8@macro@column1",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "column1",
+    "location": {
+      "column": "9",
+      "line": "1",
+      "path": "C:\\Users\\Youssef Assem\\Desktop\\micro5ara\\Microcontrollers-CSE_Smth-Assignments\\Assignment 1\\pad.h"
+    },
+    "name": "column1",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:pad.h@34@macro@column2",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "column2",
+    "location": {
+      "column": "9",
+      "line": "2",
+      "path": "C:\\Users\\Youssef Assem\\Desktop\\micro5ara\\Microcontrollers-CSE_Smth-Assignments\\Assignment 1\\pad.h"
+    },
+    "name": "column2",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:pad.h@60@macro@column3",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "column3",
+    "location": {
+      "column": "9",
+      "line": "3",
+      "path": "C:\\Users\\Youssef Assem\\Desktop\\micro5ara\\Microcontrollers-CSE_Smth-Assignments\\Assignment 1\\pad.h"
+    },
+    "name": "column3",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:pad.h@86@macro@column4",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "column4",
+    "location": {
+      "column": "9",
+      "line": "4",
+      "path": "C:\\Users\\Youssef Assem\\Desktop\\micro5ara\\Microcontrollers-CSE_Smth-Assignments\\Assignment 1\\pad.h"
+    },
+    "name": "column4",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:pad.h@114@macro@row1",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "row1",
+    "location": {
+      "column": "9",
+      "line": "6",
+      "path": "C:\\Users\\Youssef Assem\\Desktop\\micro5ara\\Microcontrollers-CSE_Smth-Assignments\\Assignment 1\\pad.h"
+    },
+    "name": "row1",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:pad.h@137@macro@row2",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "row2",
+    "location": {
+      "column": "9",
+      "line": "7",
+      "path": "C:\\Users\\Youssef Assem\\Desktop\\micro5ara\\Microcontrollers-CSE_Smth-Assignments\\Assignment 1\\pad.h"
+    },
+    "name": "row2",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:pad.h@160@macro@row3",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "row3",
+    "location": {
+      "column": "9",
+      "line": "8",
+      "path": "C:\\Users\\Youssef Assem\\Desktop\\micro5ara\\Microcontrollers-CSE_Smth-Assignments\\Assignment 1\\pad.h"
+    },
+    "name": "row3",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:pad.h@183@macro@row4",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "row4",
+    "location": {
+      "column": "9",
+      "line": "9",
+      "path": "C:\\Users\\Youssef Assem\\Desktop\\micro5ara\\Microcontrollers-CSE_Smth-Assignments\\Assignment 1\\pad.h"
+    },
+    "name": "row4",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@keyPressed",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "unsigned int keyPressed(void)",
+    "location": {
+      "column": "14",
+      "line": "11",
+      "path": "C:\\Users\\Youssef Assem\\Desktop\\micro5ara\\Microcontrollers-CSE_Smth-Assignments\\Assignment 1\\pad.h"
+    },
+    "name": "keyPressed",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@keyPressed",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "unsigned int keyPressed(void)",
+    "location": {
+      "column": "14",
+      "line": "11",
+      "path": "C:\\Users\\Youssef Assem\\Desktop\\micro5ara\\Microcontrollers-CSE_Smth-Assignments\\Assignment 1\\pad.h"
+    },
+    "name": "keyPressed",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@keyIdentification",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "unsigned int keyIdentification(void)",
+    "location": {
+      "column": "14",
+      "line": "14",
+      "path": "C:\\Users\\Youssef Assem\\Desktop\\micro5ara\\Microcontrollers-CSE_Smth-Assignments\\Assignment 1\\pad.h"
+    },
+    "name": "keyIdentification",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@keyIdentification",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "unsigned int keyIdentification(void)",
+    "location": {
+      "column": "14",
+      "line": "14",
+      "path": "C:\\Users\\Youssef Assem\\Desktop\\micro5ara\\Microcontrollers-CSE_Smth-Assignments\\Assignment 1\\pad.h"
+    },
+    "name": "keyIdentification",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
     "ID": "c:ycheck.h@1402@macro@__AEABI_PORTABILITY_INTERNAL_LEVEL",
     "What": "MacroDef",
     "defdec": "Def",
@@ -95847,6 +96141,20 @@
       "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\arm\\inc\\c\\ycheck.h"
     },
     "name": "__AEABI_PORTABILITY_INTERNAL_LEVEL",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Config_Normal.h@105@macro@_DLIB_CONFIG_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_CONFIG_H",
+    "location": {
+      "column": "9",
+      "line": "5",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\arm\\inc\\c\\DLib_Config_Normal.h"
+    },
+    "name": "_DLIB_CONFIG_H",
     "origin": "system_include",
     "scope": null
   },
@@ -95935,101 +96243,101 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@76@macro@sw1",
-    "What": "MacroDef",
+    "ID": "c:@keymap",
+    "What": "Variable",
     "defdec": "Def",
-    "display": "sw1",
+    "display": "keymap",
     "location": {
-      "column": "9",
+      "column": "20",
       "line": "5",
-      "path": "C:\\Users\\Youssef Assem\\Desktop\\micro5ara\\Microcontrollers-CSE_Smth-Assignments\\Assignment 1\\main.c"
+      "path": "C:\\Users\\Youssef Assem\\Desktop\\micro5ara\\Microcontrollers-CSE_Smth-Assignments\\Assignment 1\\pad.c"
     },
-    "name": "sw1",
+    "name": "keymap",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:main.c@98@macro@sw2",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "sw2",
-    "location": {
-      "column": "9",
-      "line": "6",
-      "path": "C:\\Users\\Youssef Assem\\Desktop\\micro5ara\\Microcontrollers-CSE_Smth-Assignments\\Assignment 1\\main.c"
-    },
-    "name": "sw2",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@main",
+    "ID": "c:@F@keyPressed",
     "What": "Function",
     "defdec": "Def",
-    "display": "int main(void)",
+    "display": "unsigned int keyPressed(void)",
     "location": {
-      "column": "5",
-      "line": "8",
-      "path": "C:\\Users\\Youssef Assem\\Desktop\\micro5ara\\Microcontrollers-CSE_Smth-Assignments\\Assignment 1\\main.c"
+      "column": "14",
+      "line": "16",
+      "path": "C:\\Users\\Youssef Assem\\Desktop\\micro5ara\\Microcontrollers-CSE_Smth-Assignments\\Assignment 1\\pad.c"
     },
-    "name": "main",
+    "name": "keyPressed",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:main.c@480@F@main@disp",
+    "ID": "c:pad.c@272@F@keyPressed@d",
     "What": "Variable",
     "defdec": "Def",
-    "display": "disp",
+    "display": "d",
     "location": {
-      "column": "15",
-      "line": "20",
-      "path": "C:\\Users\\Youssef Assem\\Desktop\\micro5ara\\Microcontrollers-CSE_Smth-Assignments\\Assignment 1\\main.c"
+      "column": "8",
+      "line": "19",
+      "path": "C:\\Users\\Youssef Assem\\Desktop\\micro5ara\\Microcontrollers-CSE_Smth-Assignments\\Assignment 1\\pad.c"
     },
-    "name": "disp",
+    "name": "d",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:main.c@540@F@main@sw1_on",
+    "ID": "c:@F@keyIdentification",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "unsigned int keyIdentification(void)",
+    "location": {
+      "column": "14",
+      "line": "32",
+      "path": "C:\\Users\\Youssef Assem\\Desktop\\micro5ara\\Microcontrollers-CSE_Smth-Assignments\\Assignment 1\\pad.c"
+    },
+    "name": "keyIdentification",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:pad.c@431@F@keyIdentification@c",
     "What": "Variable",
     "defdec": "Def",
-    "display": "sw1_on",
+    "display": "c",
     "location": {
       "column": "7",
-      "line": "22",
-      "path": "C:\\Users\\Youssef Assem\\Desktop\\micro5ara\\Microcontrollers-CSE_Smth-Assignments\\Assignment 1\\main.c"
+      "line": "34",
+      "path": "C:\\Users\\Youssef Assem\\Desktop\\micro5ara\\Microcontrollers-CSE_Smth-Assignments\\Assignment 1\\pad.c"
     },
-    "name": "sw1_on",
+    "name": "c",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:main.c@540@F@main@sw2_on",
+    "ID": "c:pad.c@445@F@keyIdentification@s",
     "What": "Variable",
-    "defdec": "Dec",
-    "display": "sw2_on",
+    "defdec": "Def",
+    "display": "s",
     "location": {
-      "column": "15",
-      "line": "22",
-      "path": "C:\\Users\\Youssef Assem\\Desktop\\micro5ara\\Microcontrollers-CSE_Smth-Assignments\\Assignment 1\\main.c"
+      "column": "7",
+      "line": "35",
+      "path": "C:\\Users\\Youssef Assem\\Desktop\\micro5ara\\Microcontrollers-CSE_Smth-Assignments\\Assignment 1\\pad.c"
     },
-    "name": "sw2_on",
+    "name": "s",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:DLib_Config_Normal.h@105@macro@_DLIB_CONFIG_H",
-    "What": "MacroDef",
+    "ID": "c:pad.c@482@F@keyIdentification@ss",
+    "What": "Variable",
     "defdec": "Def",
-    "display": "_DLIB_CONFIG_H",
+    "display": "ss",
     "location": {
-      "column": "9",
-      "line": "5",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\arm\\inc\\c\\DLib_Config_Normal.h"
+      "column": "10",
+      "line": "38",
+      "path": "C:\\Users\\Youssef Assem\\Desktop\\micro5ara\\Microcontrollers-CSE_Smth-Assignments\\Assignment 1\\pad.c"
     },
-    "name": "_DLIB_CONFIG_H",
-    "origin": "system_include",
+    "name": "ss",
+    "origin": "project_file",
     "scope": null
   }
 ]

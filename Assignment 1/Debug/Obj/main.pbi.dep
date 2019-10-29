@@ -1,10 +1,12 @@
 main.pbi: \
-  C:\Users\Youssef\ Assem\Desktop\micro5ara\Microcontrollers-CSE_Smth-Assignments\Assignment\ 1\7seg.h \
-  C:\Users\Youssef\ Assem\Desktop\micro5ara\Microcontrollers-CSE_Smth-Assignments\Assignment\ 1\tm4c123gh6pm.h \
-  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\ycheck.h \
-  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\ysizet.h \
-  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\DLib_Product.h \
-  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\DLib_Defaults.h \
-  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\yvals.h \
+  C:\Users\Youssef\ Assem\Desktop\micro5ara\Microcontrollers-CSE_Smth-Assignments\Assignment\ 1\main.c \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\stdio.h \
-  C:\Users\Youssef\ Assem\Desktop\micro5ara\Microcontrollers-CSE_Smth-Assignments\Assignment\ 1\main.c
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\ycheck.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\yvals.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\DLib_Defaults.h \
+  C:\\Program\ Files\ (x86)\\IAR\ Systems\\Embedded\ Workbench\ 8.3\\arm\\inc\\c\\DLib_Config_Normal.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\DLib_Product.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\ysizet.h \
+  C:\Users\Youssef\ Assem\Desktop\micro5ara\Microcontrollers-CSE_Smth-Assignments\Assignment\ 1/tm4c123gh6pm.h \
+  C:\Users\Youssef\ Assem\Desktop\micro5ara\Microcontrollers-CSE_Smth-Assignments\Assignment\ 1/7seg.h \
+  C:\Users\Youssef\ Assem\Desktop\micro5ara\Microcontrollers-CSE_Smth-Assignments\Assignment\ 1/pad.h

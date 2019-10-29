@@ -22,7 +22,8 @@ rule browsedata
 #Build steps
 build 7seg.pbi : index 7seg.xcl
 build main.pbi : index main.xcl
-build Assignment.pbd : link 7seg.pbi main.pbi
+build pad.pbi : index pad.xcl
+build Assignment.pbd : link 7seg.pbi main.pbi pad.pbi
 build Assignment.pbw : browsedata Assignment.pbd
 
 
