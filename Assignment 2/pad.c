@@ -29,7 +29,7 @@ int get_key() {
   while ( i --> 0 ) {
     row = 4-i;
     GPIO_PORTE_DATA_R |= rows;
-    GPIO_PORTE_DATA_R &= ~(1 << (4-i));
+    GPIO_PORTE_DATA_R &= ~(1 << i+1);
     //printf("Row_value: %d\n", 2<<i);
     col = get_column_value((GPIO_PORTC_DATA_R & columns) >> 4);
     
@@ -38,7 +38,7 @@ int get_key() {
     }
   }
   
-  printf("Col: %d, Row: %d\n", col, row);
+  //printf("Col: %d, Row: %d\n", col, row);
   return get_button(row, col);
 }
 
