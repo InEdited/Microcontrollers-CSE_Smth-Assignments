@@ -17,7 +17,7 @@ void delay(int counter)
   
   
   
-  //SYSCTL_RCGCGPIO_R |=  SYSCTL_RCGCGPIO_R1;            
+  SYSCTL_RCGCGPIO_R |=  SYSCTL_RCGCGPIO_R1;            
   
   //////////////////////////////////////////////////////////////////////////////
   SYSCTL_RCGCGPIO_R |=  SYSCTL_RCGCGPIO_R2; //PORT C
@@ -31,22 +31,22 @@ void delay(int counter)
   GPIO_PORTE_DEN_R |=  rows;
   GPIO_PORTE_DIR_R |=  rows;
   //////////////////////////////////////////////////////////////////////////////
-  //GPIO_PORTB_DEN_R  |=  0xFF;                          
-  //GPIO_PORTB_DIR_R  |=  0xFF;                          
+  GPIO_PORTB_DEN_R  |=  0xFF;                          
+  GPIO_PORTB_DIR_R  |=  0xFF;                          
 
-  //struct Seg7 disp = init_seg7(&GPIO_PORTB_DATA_R, 1);
+  struct Seg7 disp = init_seg7(&GPIO_PORTB_DATA_R, 1);
+
   unsigned int key_pressed = 0;
-  
   
   while(1)
   { 
     if (poll_keypad())
     {
       key_pressed = get_key();
-      //printf("%d\n", key_pressed);
     }
-    //set_val_seg7(&disp, key_pressed);
-    //draw_seg7(&disp);
+
+    set_val_seg7(&disp, key_pressed);
+    draw_seg7(&disp);
   }
 }
   
