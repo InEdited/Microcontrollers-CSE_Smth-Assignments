@@ -203,7 +203,7 @@ int main(void)
         if (strLen == 4 || sw1_on) //if 4 digit number or left switch is pressed
         {
         	init_timer();
-            while (sw2_off && (seconds || millis)) // rigth key not pressed or counter value != 0
+            while (sw2_off && (seconds || ten_millis)) // rigth key not pressed or counter value != 0
             {
                 lcd_command(0x80);
 
