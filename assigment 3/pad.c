@@ -54,7 +54,14 @@ int get_column_value(int val) {
 }
 
 int get_button (int row, int column) {
-  if ( row && column )
-    return KEYMAP[row - 1][column - 1];
+  if ( row && column ){
+      int i, j;
+      for (i = 0; i < 200; i++)
+          for (j = 0; j < 3180; j++)
+          {
+          }
+      return KEYMAP[row - 1][column - 1];
+
+  }
   return -1;
 }
