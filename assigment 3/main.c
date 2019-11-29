@@ -203,7 +203,7 @@ int main(void)
         if (strLen == 4 || sw1_on) //if 4 digit number or left switch is pressed
         {
         	init_timer();
-            while (sw2_off && seconds) // rigth key not pressed or counter value != 0
+            while (sw2_off && (seconds || millis)) // rigth key not pressed or counter value != 0
             {
                 lcd_command(0x80);
 
@@ -214,19 +214,17 @@ int main(void)
 					ten_millis--;
 				}
                 
-                counterStr[0] = (char)seconds % 10000 / 1000;
-                counterStr[1] = (char)seconds % 1000 / 100;
-                counterStr[2] = (char)seconds % 100 / 10;
-                counterStr[3] = (char)seconds % 10 / 1;
+                counterStr[0] = (char)(seconds % 10000 / 1000);
+                counterStr[1] = (char)(seconds % 1000 / 100);
+                counterStr[2] = (char)(seconds % 100 / 10);
+                counterStr[3] = (char)(seconds % 10 / 1);
                 counterStr[4] = '.';
-                counterStr[5] = (char)ten_millis / 10;
-                counterStr[6] = (char)ten_millis % 10;
+                counterStr[5] = (char)(ten_millis / 10);
+                counterStr[6] = (char)(ten_millis % 10);
 
-                write_lcd(counterStr, strlen(7));
+                write_lcd(counterStr, 7);
 
-                while (!(NVIC_ST_CTRL_R & 0x10000))
-                {
-                }
+                while (!(NVIC_ST_CTRL_R & 0x10000));
 
                 sw2_off = (GPIO_PORTF_DATA_R & sw2);
 
