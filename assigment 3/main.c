@@ -4,7 +4,7 @@
 
 #define sw2 0x01
 #define sw1 0x10
-#define RED (1U << 1)
+#define RED 0x2
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -13,15 +13,19 @@
 
 void blink(int duration) // duration = 10 * number of seconds to blink
 {
-    while(duration--)
+    while(duration>0)
     {
-		if(GPIO_PORTF_DATA_R | RED)
+		if(GPIO_PORTF_DATA_R & RED)
 			GPIO_PORTF_DATA_R &= ~RED;
 		else
 			GPIO_PORTF_DATA_R |= RED;
+		int i;
+		for( i = 0; i < 10; i++)
+		{
+		    while (!(NVIC_ST_CTRL_R & 0x10000)) {}
 
-		for(int i = 0; i < 10; i++)
-			while (!(NVIC_ST_CTRL_R & 0x10000)) {}
+        }
+		duration--;
     }
 }
 
@@ -62,8 +66,10 @@ void init(void)
     GPIO_PORTF_LOCK_R = 0x4C4F434B;
     GPIO_PORTF_CR_R = 0xFF;
     GPIO_PORTF_DEN_R |= (sw1 | sw2);
+    GPIO_PORTF_DEN_R |= 0x1F;
     GPIO_PORTF_DIR_R &= ~(sw1 | sw2);
     GPIO_PORTF_PUR_R |= (sw1 | sw2);
+    GPIO_PORTF_DIR_R |= (RED);
 
     ///////////////////////
 }
@@ -126,7 +132,7 @@ void write_lcd(char data[], short length)
     for (i = 0; i < length; i++)
     {
         lcd_data(data[i]);
-        delayMilli(1);
+        delayUs(1);
     }
 }
 ////////////////////////////////////////////////////////
@@ -230,13 +236,17 @@ int main(void)
             }
             if (!(seconds || ten_millis))
             {
-                write_lcd("countdown end", 13);
-                blink(50);
                 lcd_command(0x01);
+
+                write_lcd("countdown end", 13);
+                blink(5);
+                GPIO_PORTF_DATA_R &= ~RED;
+
+                break;
 			} else {
 				seconds = 0;
 				ten_millis=0;
-				strlen = 0;
+				strLen = 0;
 
 			}
         }
