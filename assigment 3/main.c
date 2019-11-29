@@ -13,16 +13,15 @@
 
 void blink(int duration) // duration = 10 * number of seconds to blink
 {
-    int d = duration;
-    while(d--)
+    while(duration--)
     {
-        GPIO_PORTF_DATA_R |= RED;
+		if(GPIO_PORTF_DATA_R | RED)
+			GPIO_PORTF_DATA_R &= ~RED;
+		else
+			GPIO_PORTF_DATA_R |= RED;
 
-                while (!(NVIC_ST_CTRL_R & 0x10000))
-                {
-                }
-
-                GPIO_PORTF_DATA_R &= ~RED;
+		for(int i = 0; i < 10; i++)
+			while (!(NVIC_ST_CTRL_R & 0x10000)) {}
     }
 }
 
@@ -229,12 +228,17 @@ int main(void)
                 sw2_off = (GPIO_PORTF_DATA_R & sw2);
 
             }
-            if (!seconds)
+            if (!(seconds || ten_millis))
             {
                 write_lcd("countdown end", 13);
                 blink(50);
                 lcd_command(0x01);
-            }
+			} else {
+				seconds = 0;
+				ten_millis=0;
+				strlen = 0;
+
+			}
         }
     }
     return 0;
