@@ -11,110 +11,6 @@
 #include <string.h>
 #include <stdint.h>
 
-#define MAX_PRECISION   (10)
-static const double rounders[MAX_PRECISION + 1] =
-{
-    0.5,                // 0
-    0.05,               // 1
-    0.005,              // 2
-    0.0005,             // 3
-    0.00005,            // 4
-    0.000005,           // 5
-    0.0000005,          // 6
-    0.00000005,         // 7
-    0.000000005,        // 8
-    0.0000000005,       // 9
-    0.00000000005       // 10
-};
-
-char* ftoa(double f, char* buf, int precision)
-{
-    char* ptr = buf;
-    char* p = ptr;
-    char* p1;
-    char c;
-    long intPart;
-
-    // check precision bounds
-    if (precision > MAX_PRECISION)
-        precision = MAX_PRECISION;
-
-    // sign stuff
-    if (f < 0)
-    {
-        f = -f;
-        *ptr++ = '-';
-    }
-
-    if (precision < 0)  // negative precision == automatic precision guess
-    {
-        if (f < 1.0) precision = 6;
-        else if (f < 10.0) precision = 5;
-        else if (f < 100.0) precision = 4;
-        else if (f < 1000.0) precision = 3;
-        else if (f < 10000.0) precision = 2;
-        else if (f < 100000.0) precision = 1;
-        else precision = 0;
-    }
-
-    // round value according the precision
-    if (precision)
-        f += rounders[precision];
-
-    // integer part...
-    intPart = f;
-    f -= intPart;
-
-    if (!intPart)
-        *ptr++ = '0';
-    else
-    {
-        // save start pointer
-        p = ptr;
-
-        // convert (reverse order)
-        while (intPart)
-        {
-            *p++ = '0' + intPart % 10;
-            intPart /= 10;
-        }
-
-        // save end pos
-        p1 = p;
-
-        // reverse result
-        while (p > ptr)
-        {
-            c = *--p;
-            *p = *ptr;
-            *ptr++ = c;
-        }
-
-        // restore end pos
-        ptr = p1;
-    }
-
-    // decimal part
-    if (precision)
-    {
-        // place decimal point
-        *ptr++ = '.';
-
-        // convert
-        while (precision--)
-        {
-            f *= 10.0;
-            c = f;
-            *ptr++ = '0' + c;
-            f -= c;
-        }
-    }
-
-    // terminating zero
-    *ptr = 0;
-
-    return buf;
-}
 void blink(int duration) // duration = 10 * number of seconds to blink
 {
     int d = duration;
@@ -160,10 +56,6 @@ void init(void)
     GPIO_PORTB_DIR_R |= 0xFF;
 
     //SYSTICK TIMER
-    NVIC_ST_CTRL_R = 0x0;
-    NVIC_ST_CURRENT_R |= 0X0;
-    NVIC_ST_RELOAD_R = 160000 - 1;
-    NVIC_ST_CTRL_R = 0x5;
 
     //////////////////////
     SYSCTL_RCGCGPIO_R |= SYSCTL_RCGCGPIO_R5;
@@ -175,6 +67,13 @@ void init(void)
     GPIO_PORTF_PUR_R |= (sw1 | sw2);
 
     ///////////////////////
+}
+
+void init_timer() {
+    NVIC_ST_CTRL_R = 0x0;
+    NVIC_ST_CURRENT_R |= 0X0;
+    NVIC_ST_RELOAD_R = 160000 - 1;
+    NVIC_ST_CTRL_R = 0x5;
 }
 ////////////////////////////////////////////////////////
 /////////////////////////LCD////////////////////////////
@@ -272,9 +171,11 @@ int main(void)
     init_keypad();
 
     int sw1_on, sw2_off;
-    float counterValue = 0;
-    char counterStr[] = "";
+    int seconds = 0;
+    int ten_millis = 0;
+    char counterStr[7];
     int strLen = 0;
+
 
     while (1)
     {
@@ -288,11 +189,11 @@ int main(void)
             if (strLen < 4 && key_pressed < 10) //if pressed key is a valid input and input is still not a 4 digit number
             {
                 lcd_command(0x01);
-                char c = key_pressed + 48;
-                strncat(counterStr, &c, 1);
+                char c = key_pressed + '0';
+                counterStr[strLen] = c;
                 strLen++;
 
-                counterValue = atof(counterStr);
+                seconds = seconds * 10 + (int)key_pressed;
                 write_lcd(counterStr, strLen);
                 write_lcd(".00", 3);
             }
@@ -301,13 +202,27 @@ int main(void)
         // excution loop
         if (strLen == 4 || sw1_on) //if 4 digit number or left switch is pressed
         {
-            while (sw2_off && counterValue) // rigth key not pressed or counter value != 0
+        	init_timer();
+            while (sw2_off && seconds) // rigth key not pressed or counter value != 0
             {
                 lcd_command(0x80);
 
-                counterValue = counterValue - 0.01;
-                ftoa(counterValue, counterStr, 2);
-                write_lcd(counterStr, strlen(counterStr));
+				if(!ten_millis) {
+					seconds--;
+					ten_millis=99;
+				} else {
+					ten_millis--;
+				}
+                
+                counterStr[0] = (char)seconds % 10000 / 1000;
+                counterStr[1] = (char)seconds % 1000 / 100;
+                counterStr[2] = (char)seconds % 100 / 10;
+                counterStr[3] = (char)seconds % 10 / 1;
+                counterStr[4] = '.';
+                counterStr[5] = (char)ten_millis / 10;
+                counterStr[6] = (char)ten_millis % 10;
+
+                write_lcd(counterStr, strlen(7));
 
                 while (!(NVIC_ST_CTRL_R & 0x10000))
                 {
@@ -316,7 +231,7 @@ int main(void)
                 sw2_off = (GPIO_PORTF_DATA_R & sw2);
 
             }
-            if (!counterValue)
+            if (!seconds)
             {
                 write_lcd("countdown end", 13);
                 blink(50);
