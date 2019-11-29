@@ -121,7 +121,7 @@ void lcd_data(unsigned char data)
     delayUs(40);
 }
 
-void write_lcd(unsigned char *data, short length)
+void write_lcd(char data[], short length)
 {
     int i;
     for (i = 0; i < length; i++)
