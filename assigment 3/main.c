@@ -214,13 +214,13 @@ int main(void)
 					ten_millis--;
 				}
                 
-                counterStr[0] = (char)(seconds % 10000 / 1000);
-                counterStr[1] = (char)(seconds % 1000 / 100);
-                counterStr[2] = (char)(seconds % 100 / 10);
-                counterStr[3] = (char)(seconds % 10 / 1);
+                counterStr[0] = (seconds % 10000 / 1000) + '0';
+                counterStr[1] = (seconds % 1000 / 100) + '0';
+                counterStr[2] = (seconds % 100 / 10) + '0';
+                counterStr[3] = (seconds % 10 / 1) + '0';
                 counterStr[4] = '.';
-                counterStr[5] = (char)(ten_millis / 10);
-                counterStr[6] = (char)(ten_millis % 10);
+                counterStr[5] = (ten_millis / 10) + '0';
+                counterStr[6] = (ten_millis % 10) + '0';
 
                 write_lcd(counterStr, 7);
 
